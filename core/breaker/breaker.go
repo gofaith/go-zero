@@ -7,10 +7,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tal-tech/go-zero/core/mathx"
-	"github.com/tal-tech/go-zero/core/proc"
-	"github.com/tal-tech/go-zero/core/stat"
-	"github.com/tal-tech/go-zero/core/stringx"
+	"github.com/gofaith/go-zero/core/mathx"
+	"github.com/gofaith/go-zero/core/proc"
+	"github.com/gofaith/go-zero/core/stat"
+	"github.com/gofaith/go-zero/core/stringx"
 )
 
 const (

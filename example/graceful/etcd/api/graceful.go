@@ -3,12 +3,12 @@ package main
 import (
 	"flag"
 
-	"github.com/tal-tech/go-zero/core/conf"
-	"github.com/tal-tech/go-zero/example/graceful/etcd/api/config"
-	"github.com/tal-tech/go-zero/example/graceful/etcd/api/handler"
-	"github.com/tal-tech/go-zero/example/graceful/etcd/api/svc"
-	"github.com/tal-tech/go-zero/rest"
-	"github.com/tal-tech/go-zero/rpcx"
+	"github.com/gofaith/go-zero/core/conf"
+	"github.com/gofaith/go-zero/example/graceful/etcd/api/config"
+	"github.com/gofaith/go-zero/example/graceful/etcd/api/handler"
+	"github.com/gofaith/go-zero/example/graceful/etcd/api/svc"
+	"github.com/gofaith/go-zero/rest"
+	"github.com/gofaith/go-zero/rpcx"
 )
 
 var configFile = flag.String("f", "etc/graceful-api.json", "the config file")

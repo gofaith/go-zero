@@ -10,10 +10,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/tal-tech/go-zero/core/executors"
-	"github.com/tal-tech/go-zero/core/proc"
-	"github.com/tal-tech/go-zero/core/sysx"
-	"github.com/tal-tech/go-zero/core/timex"
+	"github.com/gofaith/go-zero/core/executors"
+	"github.com/gofaith/go-zero/core/proc"
+	"github.com/gofaith/go-zero/core/sysx"
+	"github.com/gofaith/go-zero/core/timex"
 )
 
 const (

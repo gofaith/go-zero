@@ -4,13 +4,13 @@ import (
 	"flag"
 	"net/http"
 
-	"github.com/tal-tech/go-zero/core/conf"
-	"github.com/tal-tech/go-zero/core/logx"
-	"github.com/tal-tech/go-zero/core/service"
-	"github.com/tal-tech/go-zero/example/tracing/remote/portal"
-	"github.com/tal-tech/go-zero/rest"
-	"github.com/tal-tech/go-zero/rest/httpx"
-	"github.com/tal-tech/go-zero/rpcx"
+	"github.com/gofaith/go-zero/core/conf"
+	"github.com/gofaith/go-zero/core/logx"
+	"github.com/gofaith/go-zero/core/service"
+	"github.com/gofaith/go-zero/example/tracing/remote/portal"
+	"github.com/gofaith/go-zero/rest"
+	"github.com/gofaith/go-zero/rest/httpx"
+	"github.com/gofaith/go-zero/rpcx"
 )
 
 var (

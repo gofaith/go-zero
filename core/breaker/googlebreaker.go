@@ -5,8 +5,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/tal-tech/go-zero/core/collection"
-	"github.com/tal-tech/go-zero/core/mathx"
+	"github.com/gofaith/go-zero/core/collection"
+	"github.com/gofaith/go-zero/core/mathx"
 )
 
 const (

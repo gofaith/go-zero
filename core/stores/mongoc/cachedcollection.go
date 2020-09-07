@@ -2,9 +2,9 @@ package mongoc
 
 import (
 	"github.com/globalsign/mgo"
-	"github.com/tal-tech/go-zero/core/stores/internal"
-	"github.com/tal-tech/go-zero/core/stores/mongo"
-	"github.com/tal-tech/go-zero/core/syncx"
+	"github.com/gofaith/go-zero/core/stores/internal"
+	"github.com/gofaith/go-zero/core/stores/mongo"
+	"github.com/gofaith/go-zero/core/syncx"
 )
 
 var (

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/tal-tech/go-zero/tools/goctl/model/sql/template"
-	"github.com/tal-tech/go-zero/tools/goctl/util"
-	"github.com/tal-tech/go-zero/tools/goctl/util/stringx"
+	"github.com/gofaith/go-zero/tools/goctl/model/sql/template"
+	"github.com/gofaith/go-zero/tools/goctl/util"
+	"github.com/gofaith/go-zero/tools/goctl/util/stringx"
 )
 
 func genFineOneByField(table Table, withCache bool) (string, error) {

@@ -4,8 +4,8 @@ import (
 	"context"
 	"path"
 
-	"github.com/tal-tech/go-zero/core/breaker"
-	"github.com/tal-tech/go-zero/rpcx/internal/codes"
+	"github.com/gofaith/go-zero/core/breaker"
+	"github.com/gofaith/go-zero/rpcx/internal/codes"
 	"google.golang.org/grpc"
 )
 

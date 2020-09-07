@@ -1,9 +1,9 @@
 package rpcx
 
 import (
-	"github.com/tal-tech/go-zero/core/discov"
-	"github.com/tal-tech/go-zero/core/service"
-	"github.com/tal-tech/go-zero/core/stores/redis"
+	"github.com/gofaith/go-zero/core/discov"
+	"github.com/gofaith/go-zero/core/service"
+	"github.com/gofaith/go-zero/core/stores/redis"
 )
 
 type (

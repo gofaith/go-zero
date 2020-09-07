@@ -6,11 +6,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/tal-tech/go-zero/core/logx"
-	"github.com/tal-tech/go-zero/core/rescue"
-	"github.com/tal-tech/go-zero/core/stat"
-	"github.com/tal-tech/go-zero/core/threading"
-	"github.com/tal-tech/go-zero/core/timex"
+	"github.com/gofaith/go-zero/core/logx"
+	"github.com/gofaith/go-zero/core/rescue"
+	"github.com/gofaith/go-zero/core/stat"
+	"github.com/gofaith/go-zero/core/threading"
+	"github.com/gofaith/go-zero/core/timex"
 )
 
 const queueName = "queue"

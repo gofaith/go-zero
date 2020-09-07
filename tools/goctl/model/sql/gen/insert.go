@@ -3,9 +3,9 @@ package gen
 import (
 	"strings"
 
-	"github.com/tal-tech/go-zero/tools/goctl/model/sql/template"
-	"github.com/tal-tech/go-zero/tools/goctl/util"
-	"github.com/tal-tech/go-zero/tools/goctl/util/stringx"
+	"github.com/gofaith/go-zero/tools/goctl/model/sql/template"
+	"github.com/gofaith/go-zero/tools/goctl/util"
+	"github.com/gofaith/go-zero/tools/goctl/util/stringx"
 )
 
 func genInsert(table Table, withCache bool) (string, error) {

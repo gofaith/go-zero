@@ -6,8 +6,8 @@ import (
 	"bookstore/api/internal/svc"
 	"flag"
 
-	"github.com/tal-tech/go-zero/core/conf"
-	"github.com/tal-tech/go-zero/rest"
+	"github.com/gofaith/go-zero/core/conf"
+	"github.com/gofaith/go-zero/rest"
 )
 
 var configFile = flag.String("f", "etc/bookstore-api.yaml", "the config file")

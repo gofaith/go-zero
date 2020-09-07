@@ -13,8 +13,8 @@ import (
 	"shorturl/rpc/transform/internal/svc"
 	transform "shorturl/rpc/transform/pb"
 
-	"github.com/tal-tech/go-zero/core/conf"
-	"github.com/tal-tech/go-zero/rpcx"
+	"github.com/gofaith/go-zero/core/conf"
+	"github.com/gofaith/go-zero/rpcx"
 	"google.golang.org/grpc"
 )
 

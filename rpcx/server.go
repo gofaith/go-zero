@@ -6,13 +6,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tal-tech/go-zero/core/load"
-	"github.com/tal-tech/go-zero/core/logx"
-	"github.com/tal-tech/go-zero/core/netx"
-	"github.com/tal-tech/go-zero/core/stat"
-	"github.com/tal-tech/go-zero/rpcx/internal"
-	"github.com/tal-tech/go-zero/rpcx/internal/auth"
-	"github.com/tal-tech/go-zero/rpcx/internal/serverinterceptors"
+	"github.com/gofaith/go-zero/core/load"
+	"github.com/gofaith/go-zero/core/logx"
+	"github.com/gofaith/go-zero/core/netx"
+	"github.com/gofaith/go-zero/core/stat"
+	"github.com/gofaith/go-zero/rpcx/internal"
+	"github.com/gofaith/go-zero/rpcx/internal/auth"
+	"github.com/gofaith/go-zero/rpcx/internal/serverinterceptors"
 )
 
 const envPodIp = "POD_IP"

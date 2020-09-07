@@ -15,10 +15,10 @@ import (
 	"github.com/globalsign/mgo"
 	"github.com/globalsign/mgo/bson"
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/core/stat"
-	"github.com/tal-tech/go-zero/core/stores/internal"
-	"github.com/tal-tech/go-zero/core/stores/mongo"
-	"github.com/tal-tech/go-zero/core/stores/redis"
+	"github.com/gofaith/go-zero/core/stat"
+	"github.com/gofaith/go-zero/core/stores/internal"
+	"github.com/gofaith/go-zero/core/stores/mongo"
+	"github.com/gofaith/go-zero/core/stores/redis"
 )
 
 func init() {

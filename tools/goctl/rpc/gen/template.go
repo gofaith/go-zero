@@ -1,8 +1,8 @@
 package gen
 
 import (
-	"github.com/tal-tech/go-zero/tools/goctl/util"
-	"github.com/tal-tech/go-zero/tools/goctl/util/console"
+	"github.com/gofaith/go-zero/tools/goctl/util"
+	"github.com/gofaith/go-zero/tools/goctl/util/console"
 )
 
 const rpcTemplateText = `syntax = "proto3";

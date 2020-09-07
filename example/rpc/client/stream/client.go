@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/tal-tech/go-zero/core/discov"
-	"github.com/tal-tech/go-zero/example/rpc/remote/stream"
-	"github.com/tal-tech/go-zero/rpcx"
+	"github.com/gofaith/go-zero/core/discov"
+	"github.com/gofaith/go-zero/example/rpc/remote/stream"
+	"github.com/gofaith/go-zero/rpcx"
 )
 
 const name = "kevin"

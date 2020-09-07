@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/tal-tech/go-zero/tools/goctl/util"
+	"github.com/gofaith/go-zero/tools/goctl/util"
 )
 
 func getFilePath(file string) (string, error) {

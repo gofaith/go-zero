@@ -4,11 +4,11 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com/tal-tech/go-zero/core/stores/cache"
-	"github.com/tal-tech/go-zero/core/stores/internal"
-	"github.com/tal-tech/go-zero/core/stores/redis"
-	"github.com/tal-tech/go-zero/core/stores/sqlx"
-	"github.com/tal-tech/go-zero/core/syncx"
+	"github.com/gofaith/go-zero/core/stores/cache"
+	"github.com/gofaith/go-zero/core/stores/internal"
+	"github.com/gofaith/go-zero/core/stores/redis"
+	"github.com/gofaith/go-zero/core/stores/sqlx"
+	"github.com/gofaith/go-zero/core/syncx"
 )
 
 // see doc/sql-cache.md

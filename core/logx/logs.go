@@ -16,9 +16,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/tal-tech/go-zero/core/iox"
-	"github.com/tal-tech/go-zero/core/sysx"
-	"github.com/tal-tech/go-zero/core/timex"
+	"github.com/gofaith/go-zero/core/iox"
+	"github.com/gofaith/go-zero/core/sysx"
+	"github.com/gofaith/go-zero/core/timex"
 )
 
 const (

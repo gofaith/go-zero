@@ -8,9 +8,9 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/tal-tech/go-zero/core/collection"
-	"github.com/tal-tech/go-zero/core/mathx"
-	"github.com/tal-tech/go-zero/core/stat"
+	"github.com/gofaith/go-zero/core/collection"
+	"github.com/gofaith/go-zero/core/mathx"
+	"github.com/gofaith/go-zero/core/stat"
 )
 
 const (
