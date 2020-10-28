@@ -41,6 +41,7 @@ const (
 
 	consoleMode = "console"
 	volumeMode  = "volume"
+	fileMode    = "file"
 
 	levelInfo   = "info"
 	levelError  = "error"
@@ -109,13 +110,13 @@ func MustSetup(c LogConf) {
 // the same logic for SetUp
 func SetUp(c LogConf) error {
 	switch c.Mode {
-	case consoleMode:
-		setupWithConsole(c)
-		return nil
 	case volumeMode:
 		return setupWithVolume(c)
-	default:
+	case fileMode:
 		return setupWithFiles(c)
+	default:
+		setupWithConsole(c)
+		return nil
 	}
 }
 
@@ -267,7 +268,7 @@ func WithGzip() LogOption {
 
 func createOutput(path string) (io.WriteCloser, error) {
 	if len(path) == 0 {
-		return nil, ErrLogPathNotSet
+		path = "logs"
 	}
 
 	return NewLogger(path, DefaultRotateRule(path, backupFileDelimiter, options.keepDays,
@@ -385,7 +386,7 @@ func setupWithFiles(c LogConf) error {
 	var err error
 
 	if len(c.Path) == 0 {
-		return ErrLogPathNotSet
+		c.Path = "logs"
 	}
 
 	opts = append(opts, WithCooldownMillis(c.StackCooldownMillis))
