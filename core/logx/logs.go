@@ -178,6 +178,10 @@ func Disable() {
 	})
 }
 
+func HijackError(fn func(content string)) {
+	errorHijacker = append(errorHijacker, fn)
+}
+
 func Error(v ...interface{}) {
 	ErrorCaller(1, v...)
 }
