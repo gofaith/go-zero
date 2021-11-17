@@ -60,14 +60,15 @@ var (
 	ErrLogNotInitialized    = errors.New("log not initialized")
 	ErrLogServiceNameNotSet = errors.New("log service name must be set")
 
-	writeConsole bool
-	logLevel     uint32
-	infoLog      io.WriteCloser
-	errorLog     io.WriteCloser
-	severeLog    io.WriteCloser
-	slowLog      io.WriteCloser
-	statLog      io.WriteCloser
-	stackLog     io.Writer
+	writeConsole  bool
+	logLevel      uint32
+	infoLog       io.WriteCloser
+	errorLog      io.WriteCloser
+	errorHijacker []func(content string)
+	severeLog     io.WriteCloser
+	slowLog       io.WriteCloser
+	statLog       io.WriteCloser
+	stackLog      io.Writer
 
 	once        sync.Once
 	initialized uint32
@@ -343,6 +344,11 @@ func output(writer io.Writer, level, msg string) {
 func outputError(writer io.Writer, msg string, callDepth int) {
 	content := formatWithCaller(msg, callDepth)
 	output(writer, levelError, content)
+	for _, fn := range errorHijacker {
+		if fn != nil {
+			fn(content)
+		}
+	}
 }
 
 func outputJson(writer io.Writer, info interface{}) {
