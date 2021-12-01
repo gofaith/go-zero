@@ -250,6 +250,9 @@ func Stat(v ...interface{}) {
 }
 
 func Statf(format string, v ...interface{}) {
+	if writeConsole {
+		return
+	}
 	statSync(fmt.Sprintf(format, v...))
 }
 
